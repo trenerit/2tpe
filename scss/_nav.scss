@@ -1,0 +1,23 @@
+@use 'variables' as *;
+
+nav {
+    display: flex;
+    align-items: center;
+    
+    position: fixed;
+    left: 0;
+    top: 0;
+    
+    width: 100%;
+    height: 8%;
+    
+    background-color: $color-terracotta;
+}
+
+.logo, .menu {
+    flex-basis: 50%;
+}
+
+.menu {
+    text-align: right;
+}
