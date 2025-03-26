@@ -1,0 +1,34 @@
+@use 'variables' as *;
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: $color-navy;
+    color: $color-beige;
+    position: relative;
+}
+
+h1 {
+    font-weight: normal;
+}
+
+.container-button-header {
+  display: flex;
+  justify-content: center; 
+  position: absolute;
+  width: 100%;
+  bottom: 20px;
+  /* left: 0;
+  right: 0; */
+  margin: 0 auto;
+}
+
+.button-header {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 1px solid $color-terracotta;
+    margin: 20px;
+}
