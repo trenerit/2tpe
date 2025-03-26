@@ -5,7 +5,8 @@ header {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: $color-navy;
+    // background-color: $color-navy;
+    background: url('../assets/img/small_bg_header.jpg') center/cover fixed;
     color: $color-beige;
     position: relative;
 }

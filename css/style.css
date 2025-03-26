@@ -36,7 +36,7 @@ header {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #1E2A38;
+  background: url("../assets/img/small_bg_header.jpg") center/cover fixed;
   color: #EDE0D4;
   position: relative;
 }
