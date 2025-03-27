@@ -2,35 +2,73 @@
 
 header {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
     height: 100vh;
-    // background-color: $color-navy;
     background: url('../assets/img/small_bg_header.jpg') center/cover fixed;
+    background-position: 45%;
     color: $color-beige;
     position: relative;
+    
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: $color-navy-alpha;
+    }
 }
 
 h1 {
+    z-index: 1;
     font-weight: normal;
     text-align: center;
+    font-size: 4rem;
+    flex-basis: 60%;
+    font-size: 8rem;
 }
 
 .container-button-header {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center; 
   position: absolute;
   width: 100%;
   bottom: 20px;
-  /* left: 0;
-  right: 0; */
   margin: 0 auto;
+  z-index: 1;
 }
 
 .button-header {
     height: 100px;
     width: 100px;
     border-radius: 50%;
-    border: 1px solid $color-terracotta;
     margin: 20px;
+    background-color: $color-beige;
+    color: $color-terracotta;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:nth-of-type(1) {
+        animation: animation-opacity 2s backwards;
+    }
+    
+    &:nth-of-type(2) {
+        animation: animation-opacity 2s .5s backwards;
+    }
+    
+    &:nth-of-type(3) {
+        animation: animation-opacity 2s 1s backwards;
+    }
+    
+    &:nth-of-type(4) {
+        animation: animation-opacity 2s 1.5s backwards;
+    }
+
+    .material-symbols-outlined {
+        font-size: 4rem;
+    }
 }
