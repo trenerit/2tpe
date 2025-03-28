@@ -11,6 +11,10 @@
   box-sizing: border-box;
 }
 
+html, body {
+  scroll-behavior: smooth;
+}
+
 html {
   font-size: 10px;
 }
@@ -198,6 +202,18 @@ h1 {
 }
 .button-header .material-symbols-outlined {
   font-size: 5rem;
+}
+
+section {
+  min-height: 100vh;
+}
+section:nth-of-type(even) {
+  background-color: lightgray;
+}
+section h2 {
+  padding-top: 7rem;
+  text-align: center;
+  font-size: 3rem;
 }
 
 /*# sourceMappingURL=style.css.map */

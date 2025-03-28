@@ -1,0 +1,13 @@
+section {
+    min-height: 100vh;
+
+    &:nth-of-type(even) {
+        background-color: lightgray;
+    }
+
+    h2 {
+        padding-top: 7rem;
+        text-align: center;
+        font-size: 3rem;
+    }
+}
