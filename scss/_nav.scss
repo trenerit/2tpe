@@ -39,6 +39,34 @@ nav {
             justify-content: space-evenly;
             list-style: none;
             font-size: 2.5rem;
+
+            li {
+                border-bottom: 2px solid transparent;
+                position: relative;
+                transition: .25s;
+                
+                &::before {
+                    content: '';
+                    display: block;
+                    height: 2px;
+                    width: 0;
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    transform-origin: center;
+                    background-color: $color-navy-alpha;
+                    transition: .25s;
+                }
+                
+                &:hover::before {
+                    width: 100%;
+                    left: 0;
+                }
+                
+                &:hover {
+                    transform: translateY(-5px);
+                }
+            }
         }
     }
 }
