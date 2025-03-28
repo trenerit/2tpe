@@ -67,21 +67,26 @@ nav {
     position: relative;
     transition: 0.25s;
   }
-  .menu ul li::before {
+  .menu ul li::before, .menu ul li::after {
     content: "";
     display: block;
     height: 2px;
-    width: 0;
     position: absolute;
     bottom: 0;
+    background-color: transparent;
+    transition: 0.5s;
+    width: 0;
     left: 50%;
-    transform-origin: center;
+  }
+  .menu ul li:hover::after {
+    right: 0;
     background-color: rgba(30, 42, 56, 0.737254902);
-    transition: 0.25s;
+    width: 50%;
   }
   .menu ul li:hover::before {
-    width: 100%;
+    background-color: rgba(30, 42, 56, 0.737254902);
     left: 0;
+    width: 50%;
   }
   .menu ul li:hover {
     transform: translateY(-5px);
@@ -166,6 +171,11 @@ h1 {
   .button-header {
     height: 8rem;
     width: 8rem;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  .button-header:hover {
+    scale: 1.2;
   }
 }
 @media screen and (min-width: 1124px) {

@@ -45,22 +45,28 @@ nav {
                 position: relative;
                 transition: .25s;
                 
-                &::before {
+                &::before, &::after {
                     content: '';
                     display: block;
                     height: 2px;
-                    width: 0;
                     position: absolute;
                     bottom: 0;
+                    background-color: transparent;
+                    transition: .5s;
+                    width: 0;
                     left: 50%;
-                    transform-origin: center;
+                }
+                
+                &:hover::after {
+                    right: 0;
                     background-color: $color-navy-alpha;
-                    transition: .25s;
+                    width: 50%;
                 }
                 
                 &:hover::before {
-                    width: 100%;
+                    background-color: $color-navy-alpha;
                     left: 0;
+                    width: 50%;
                 }
                 
                 &:hover {
