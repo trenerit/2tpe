@@ -52,9 +52,25 @@ nav {
 .menu {
   text-align: right;
 }
+.menu ul {
+  display: none;
+}
+@media screen and (min-width: 1124px) {
+  .menu ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    font-size: 2.5rem;
+  }
+}
 
 .menu .material-symbols-outlined {
   font-size: 5rem;
+}
+@media screen and (min-width: 1124px) {
+  .menu .material-symbols-outlined {
+    display: none;
+  }
 }
 
 header {
@@ -88,12 +104,12 @@ h1 {
     font-size: 7rem;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1124px) {
   h1 {
     font-size: 8rem;
   }
 }
-@media screen and (min-width: 1224px) {
+@media screen and (min-width: 1324px) {
   h1 {
     font-size: 10rem;
   }
@@ -111,15 +127,28 @@ h1 {
 }
 
 .button-header {
-  height: 100px;
-  width: 100px;
+  height: 7rem;
+  width: 7rem;
   border-radius: 50%;
   margin: 20px;
-  background-color: #EDE0D4;
+  border: 0.2rem solid #E07A5F;
+  background-color: #1E2A38;
   color: #E07A5F;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media screen and (min-width: 726px) {
+  .button-header {
+    height: 8rem;
+    width: 8rem;
+  }
+}
+@media screen and (min-width: 1124px) {
+  .button-header {
+    height: 10rem;
+    width: 10rem;
+  }
 }
 .button-header:nth-of-type(1) {
   animation: animation-opacity 2s backwards;

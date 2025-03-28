@@ -1,4 +1,5 @@
 @use 'variables' as *;
+@use 'mixins' as *;
 
 nav {
     display: flex;
@@ -30,8 +31,21 @@ nav {
 
 .menu {
     text-align: right;
+    ul {
+        display: none;
+        
+        @include mq('l') {
+            display: flex;
+            justify-content: space-evenly;
+            list-style: none;
+            font-size: 2.5rem;
+        }
+    }
 }
 
 .menu .material-symbols-outlined {
     font-size: 5rem;
+    @include mq('l') {
+        display: none;
+    }
 }
