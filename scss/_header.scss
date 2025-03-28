@@ -1,11 +1,12 @@
 @use 'variables' as *;
+@use 'mixins' as *;
 
 header {
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 100vh;
-    background: url('../assets/img/small_bg_header.jpg') center/cover fixed;
+    background: url('../assets/img/small-bg-header.webp') center/cover fixed;
     background-position: 45%;
     color: $color-beige;
     position: relative;
@@ -24,9 +25,21 @@ h1 {
     z-index: 1;
     font-weight: normal;
     text-align: center;
-    font-size: 4rem;
-    flex-basis: 60%;
-    font-size: 8rem;
+    // flex-basis: 70%;
+    padding-top: 8rem;
+    font-size: 5rem;
+    
+    @include mq {
+        font-size: 7rem;
+    }
+    
+    @include mq('l') {
+        font-size: 8rem;
+    }
+    
+    @include mq('xl') {
+        font-size: 10rem;
+    }
 }
 
 .container-button-header {
@@ -69,6 +82,6 @@ h1 {
     }
 
     .material-symbols-outlined {
-        font-size: 4rem;
+        font-size: 5rem;
     }
 }

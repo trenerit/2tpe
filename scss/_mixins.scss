@@ -1,0 +1,27 @@
+@mixin box($bg-color: red, $w: 200px, $h: 200px) {
+    background-color: $bg-color;
+    width: $w;
+    height: $h;
+}
+
+$size-m: 726px;
+$size-l: 1024px;
+$size-xl: 1224px;
+
+@mixin mq($size: 'm') {
+
+    @if $size == 'm' {
+        $size: $size-m;
+    } @else if $size == 'l' {
+        $size: $size-l;
+    } @else if $size == 'xl' {
+        $size: $size-xl;
+    } @else {
+        $size: $size;
+    }
+
+    @media screen and (min-width: $size) {
+        @content;
+    }
+
+}
