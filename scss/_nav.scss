@@ -16,6 +16,12 @@ nav {
     color: $color-navy;
     
     background-color: $color-terracotta;
+
+    transition: .5s;
+}
+
+.nav-small {
+    height: 8%;
 }
 
 .logo, .menu {

@@ -1,29 +1,34 @@
-// const btnSearch = document.querySelector('#btn-search');
+const nav = document.querySelector('header nav');
 
-// btnSearch.addEventListener('click', () => {
-//     alert('search');
-// });
+const windowScroll = () => {
 
-const zm1 = [];
+    const positionY = this.scrollY;
 
-zm1.push('Piotr', 'Adam', 'Anna', 'Aleksander');
+    if(positionY > 200) {
+        nav.classList.add('nav-small');
+    } else {
+        nav.classList.remove('nav-small');
+    }
 
-console.log(zm1);
-console.log(zm1[0]);
-
-zm1.forEach(name => {
-    console.log(name);
-});
-
-for(let i = 1; i <= 10; i++) {
-    console.log(i);
 }
+
+window.addEventListener('scroll', windowScroll);
+
 
 const btns = document.querySelectorAll('.button-header span');
 
+const body = document.querySelector('body');
+
 btns.forEach((elem, i) => {
     i++;
+    
     elem.addEventListener('click', () => {
-        alert(`przycisk nr ${i}`);
+    
+        const title = document.querySelector(`#descriptionTitle${i}`).innerText;
+        const description = document.querySelector(`#description${i}`).innerText;
+
+        body.classList.add('modal-window');
+
+        alert(title);
     });
 });
