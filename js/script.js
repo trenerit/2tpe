@@ -15,7 +15,7 @@ const windowScroll = () => {
 window.addEventListener('scroll', windowScroll);
 
 
-const btns = document.querySelectorAll('.button-header span');
+const btns = document.querySelectorAll('.button-header');
 
 const modal = document.querySelector('#modal');
 

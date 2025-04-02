@@ -45,6 +45,15 @@ a {
   justify-content: center;
   align-items: center;
 }
+.modal-window .title, .modal-window .description {
+  text-align: center;
+  margin: 30px 0;
+  font-size: 2rem;
+}
+.modal-window .title {
+  font-weight: bold;
+  font-size: 2.25rem;
+}
 
 #modal-window {
   background-color: lightgray;
