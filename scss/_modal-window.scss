@@ -1,4 +1,5 @@
 @use 'variables' as *;
+@use 'mixins' as *;
 
 .modal-window {
     position: fixed;
@@ -11,6 +12,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: .5s;
 
     .title, .description {
         text-align: center;
@@ -27,15 +29,24 @@
 
 #modal-window {
     background-color: lightgray;
-    width: 50%;
-    height: 50%;
+    width: 95%;
+    height: 80%;
+    @include mq {
+        width: 50%;
+        height: 50%;
+    }
     border-radius: .6rem;
     position: relative;
-    
+    padding: 10px;
+
     .material-symbols-outlined {
         position: absolute;
-        right: -39px;
-        top: -39px;
+        right: 5px;
+        top: 5px;
+        @include mq {
+            right: -41px;
+            top: -41px;
+        }
         color: $color-terracotta;
         font-size: 5rem;
         cursor: pointer;

@@ -44,6 +44,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.5s;
 }
 .modal-window .title, .modal-window .description {
   text-align: center;
@@ -57,18 +58,31 @@ a {
 
 #modal-window {
   background-color: lightgray;
-  width: 50%;
-  height: 50%;
+  width: 95%;
+  height: 80%;
   border-radius: 0.6rem;
   position: relative;
+  padding: 10px;
+}
+@media screen and (min-width: 726px) {
+  #modal-window {
+    width: 50%;
+    height: 50%;
+  }
 }
 #modal-window .material-symbols-outlined {
   position: absolute;
-  right: -39px;
-  top: -39px;
+  right: 5px;
+  top: 5px;
   color: #E07A5F;
   font-size: 5rem;
   cursor: pointer;
+}
+@media screen and (min-width: 726px) {
+  #modal-window .material-symbols-outlined {
+    right: -41px;
+    top: -41px;
+  }
 }
 
 nav {
