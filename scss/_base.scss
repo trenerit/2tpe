@@ -1,5 +1,3 @@
-@use 'variables' as *;
-
 * {
     font-family: "Kanit", sans-serif;
     box-sizing: border-box;
@@ -25,14 +23,4 @@ a {
 
 .hide {
     display: none;
-}
-
-.modal-window {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100vh;
-    z-index: 99;
-    background-color: $color-mint;
 }
