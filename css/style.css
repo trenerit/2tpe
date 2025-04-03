@@ -6,7 +6,7 @@
     opacity: 1;
   }
 }
-* {
+*, *::before, *::after {
   font-family: "Kanit", sans-serif;
   box-sizing: border-box;
 }
@@ -31,6 +31,81 @@ a {
 
 .hide {
   display: none;
+}
+
+.container {
+  margin: 0 1rem;
+}
+@media screen and (min-width: 726px) {
+  .container {
+    width: 70rem;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1124px) {
+  .container {
+    width: 110rem;
+  }
+}
+@media screen and (min-width: 1324px) {
+  .container {
+    width: 130rem;
+  }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  flex-basis: 100%;
+  padding: 10px;
+}
+@media screen and (min-width: 726px) {
+  .col-m-50 {
+    flex-basis: 50%;
+  }
+}
+@media screen and (min-width: 726px) {
+  .col-m-33 {
+    flex-basis: 33.3333%;
+  }
+}
+@media screen and (min-width: 726px) {
+  .col-m-25 {
+    flex-basis: 25%;
+  }
+}
+@media screen and (min-width: 1124px) {
+  .col-l-50 {
+    flex-basis: 50%;
+  }
+}
+@media screen and (min-width: 1124px) {
+  .col-l-33 {
+    flex-basis: 33.3333%;
+  }
+}
+@media screen and (min-width: 1124px) {
+  .col-l-25 {
+    flex-basis: 25%;
+  }
+}
+@media screen and (min-width: 1324px) {
+  .col-xl-50 {
+    flex-basis: 50%;
+  }
+}
+@media screen and (min-width: 1324px) {
+  .col-xl-33 {
+    flex-basis: 33.3333%;
+  }
+}
+@media screen and (min-width: 1324px) {
+  .col-xl-25 {
+    flex-basis: 25%;
+  }
 }
 
 .modal-window {
