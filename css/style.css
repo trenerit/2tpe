@@ -117,9 +117,6 @@ nav {
 .menu {
   text-align: right;
 }
-.menu ul {
-  display: none;
-}
 @media screen and (min-width: 1124px) {
   .menu ul {
     display: flex;
@@ -156,6 +153,11 @@ nav {
   .menu ul li:hover {
     transform: translateY(-5px);
   }
+}
+
+.menu-small {
+  display: flex !important;
+  flex-direction: column;
 }
 
 .menu .material-symbols-outlined {

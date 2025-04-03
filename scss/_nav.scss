@@ -38,7 +38,7 @@ nav {
 .menu {
     text-align: right;
     ul {
-        display: none;
+        // display: none;
         
         @include mq('l') {
             display: flex;
@@ -81,6 +81,11 @@ nav {
             }
         }
     }
+}
+
+.menu-small {
+    display: flex !important;
+    flex-direction: column;
 }
 
 .menu .material-symbols-outlined {
