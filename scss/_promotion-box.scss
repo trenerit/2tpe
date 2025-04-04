@@ -1,0 +1,9 @@
+@use 'variables' as *;
+
+.promotion-box {
+    background-color: $color-beige;
+    color: $color-navy;
+    height: 10rem;
+    border-radius: 1rem;
+    padding: 1.4rem;
+}

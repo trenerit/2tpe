@@ -366,6 +366,14 @@ h1 {
   margin: 0;
 }
 
+.promotion-box {
+  background-color: #EDE0D4;
+  color: #1E2A38;
+  height: 10rem;
+  border-radius: 1rem;
+  padding: 1.4rem;
+}
+
 section {
   min-height: 100vh;
 }
