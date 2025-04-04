@@ -369,9 +369,27 @@ h1 {
 .promotion-box {
   background-color: #EDE0D4;
   color: #1E2A38;
-  height: 10rem;
   border-radius: 1rem;
   padding: 1.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.promotion-box p {
+  flex-basis: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  padding: 2rem;
+}
+.promotion-box p:nth-of-type(1), .promotion-box p:nth-of-type(3) {
+  flex-basis: 10%;
+}
+.promotion-box span {
+  font-size: 3.6rem;
+  font-weight: bold;
 }
 
 section {
