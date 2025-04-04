@@ -378,4 +378,33 @@ section h2 {
   font-size: 3rem;
 }
 
+input, textarea, button {
+  border-radius: 0.4rem;
+  font-size: 1.7rem;
+  transition: 0.4s;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 20px;
+  border: 1px solid #E07A5F;
+  outline: 0;
+  resize: none;
+}
+input:focus, textarea:focus {
+  box-shadow: 0 0 1rem gray;
+}
+
+button {
+  width: 40%;
+  padding: 14px;
+  background-color: rgba(30, 42, 56, 0.8784313725);
+  color: #EDE0D4;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #1E2A38;
+}
+
 /*# sourceMappingURL=style.css.map */
