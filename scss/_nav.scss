@@ -124,6 +124,9 @@ nav {
 
 .menu .material-symbols-outlined {
     font-size: 5rem;
+    @include mq {
+        cursor: pointer;
+    }
     @include mq('l') {
         display: none;
     }
