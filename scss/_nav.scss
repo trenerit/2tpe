@@ -84,8 +84,42 @@ nav {
 }
 
 .menu-small {
-    display: flex !important;
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    background-color: $color-navy;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    color: $color-beige;
+    font-size: 3.2rem;
+    padding: 0;
+    margin: 0;
+
+    li {
+        width: 100%;
+        // border: 1px solid red;
+        margin-top: 2rem;
+    }
+    
+    a {
+        padding: 1.8rem;
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    span {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
 }
 
 .menu .material-symbols-outlined {
