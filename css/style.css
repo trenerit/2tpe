@@ -402,8 +402,8 @@ h1 {
 }
 
 .promotion-box {
-  background-color: #EDE0D4;
-  color: #1E2A38;
+  background-color: #1E2A38;
+  color: #EDE0D4;
   border-radius: 1rem;
   padding: 1.4rem;
   display: flex;
@@ -429,14 +429,15 @@ h1 {
 
 section {
   min-height: 100vh;
+  padding: 8rem 0;
 }
 section:nth-of-type(even) {
-  background-color: lightgray;
+  background-color: #EDE0D4;
 }
 section h2 {
-  padding-top: 8rem;
   text-align: center;
   font-size: 3rem;
+  margin-bottom: 5rem;
 }
 
 input, textarea, button {
@@ -466,6 +467,17 @@ button {
 }
 button:hover {
   background-color: #1E2A38;
+}
+
+footer {
+  background-color: #EDE0D4;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer p {
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

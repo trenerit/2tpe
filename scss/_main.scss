@@ -1,13 +1,16 @@
+@use 'variables' as *;
+
 section {
     min-height: 100vh;
+    padding: 8rem 0;
 
     &:nth-of-type(even) {
-        background-color: lightgray;
+        background-color: $color-beige;
     }
 
     h2 {
-        padding-top: 8rem;
         text-align: center;
         font-size: 3rem;
+        margin-bottom: 5rem;
     }
 }

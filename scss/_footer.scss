@@ -1,0 +1,13 @@
+@use 'variables' as *;
+
+footer {
+    background-color: $color-beige;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+        text-align: center;
+    }
+}
